@@ -1,4 +1,4 @@
-import { defineProps, type AquamarkProps } from './aquamark.props'
+import { defineProps, type AquamarkProps } from './props'
 import { render } from './core'
 
 export default class Aquamark {

@@ -1,4 +1,4 @@
-import type { AquamarkProps } from "./aquamark.props"
+import type { AquamarkProps } from "./props"
 
 const CANVAS_ID = 'aquamark-root'
 export function render(configs: AquamarkProps) {
