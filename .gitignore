@@ -132,7 +132,7 @@ dist
 # vitepress-related
 */.vitepress/cache
 
-#dev-playground-related
-dev-playground/**/index.cjs.js
-dev-playground/**/index.esm.js
-dev-playground/**/index.iife.js
+#playgrounds-related
+playgrounds/**/index.cjs.js
+playgrounds/**/index.esm.js
+playgrounds/**/index.iife.js
