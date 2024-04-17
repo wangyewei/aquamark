@@ -4,7 +4,7 @@ import { render } from './core'
 export default class Aquamark {
   #configs: AquamarkProps
 
-  constructor(configs: AquamarkProps) {
+  constructor(configs?: AquamarkProps) {
     this.#configs = defineProps(configs)
   }
 
