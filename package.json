@@ -39,7 +39,8 @@
     "build:pre": "rimraf ./dist",
     "build:index": "tsc -p . --noEmit && rollup --config rollup.config.ts --configPlugin esbuild",
     "build:dts": "tsc -p tsconfig.build.json --noEmit && rollup -c rollup.dts.config.js",
-    "build:playgrounds": "node ./scripts/build-playgrounds.js"
+    "build:playgrounds": "node ./scripts/build-playgrounds.js",
+    "build:all": "run-s build build:playgrounds"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",

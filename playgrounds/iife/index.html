@@ -6,9 +6,24 @@
     <title>Document</title>
   </head>
   <body>
+    <img
+      src="./logo.png"
+      alt=""
+      width="250"
+      style="
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 150px;
+        height: 150px;
+      "
+    />
     <script src="./index.iife.js"></script>
     <script>
-      const mark = new Aquamark()
+      const mark = new Aquamark({
+        content: "aquamark.js",
+      })
       mark.init()
     </script>
   </body>
