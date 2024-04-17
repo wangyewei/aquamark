@@ -1,0 +1,64 @@
+{
+  "packageManager": "pnpm@8.6.1",
+  "name": "aquamark",
+  "version": "0.0.0",
+  "description": "Aquamark.js is a watermark util based on canvas & typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangyewei/aquamark.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wangyewei/aquamark/issues"
+  },
+  "homepage": "https://github.com/wangyewei/aquamark#readme",
+  "author": "Yewei (Yev) Wang",
+  "engines": {
+    "node": ">=16.14.0",
+    "pnpm": ">=8.6.1"
+  },
+  "license": "MIT",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "utils"
+  ],
+  "scripts": {
+    "test": "vitest",
+    "test:dts": "vitest --typecheck",
+    "test:coverage": "vitest run --coverage",
+    "build": "run-s build:pre build:index build:dts",
+    "build:pre": "rimraf ./dist",
+    "build:index": "tsc -p . --noEmit && rollup --config rollup.config.ts --configPlugin esbuild",
+    "build:dts": "tsc -p tsconfig.build.json --noEmit && rollup -c rollup.dts.config.js",
+    "build:playgrounds": "node ./scripts/build-playgrounds.js"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^20.11.30",
+    "@vitest/coverage-istanbul": "^1.4.0",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "jsdom": "^24.0.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.13.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-esbuild": "^6.1.1",
+    "typescript": "^5.4.3",
+    "vitest": "^1.4.0"
+  }
+}
