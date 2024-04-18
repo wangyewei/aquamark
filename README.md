@@ -14,3 +14,34 @@
     <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wangyewei/aquamark/ci.yml?style=flat&label=CI">
   </a>
 </p>
+
+
+<p align="center">
+  <b>🚧 Work In Progress 🚧</b><br/>
+  currently in active development and not usable for production yet.
+</p>
+
+
+## Installation
+
+Install using `CDN`
+
+```html
+<script src="https://unpkg.com/browse/aquamark/dist/index.iife.js"><script>
+```
+Install using `npm`
+
+```sh
+$ npm install aquamark
+```
+
+## Basic Usage
+
+```typescript
+const aquamark = new Aquamark()
+aquamark.init()
+```
+
+## License
+
+Aquamark licensed on [MIT LICENSE](./LICENSE). &copy;2024-present [Yev Wang](https://yev.wang)
