@@ -11,7 +11,7 @@
     <img alt="GitHub License" src="https://img.shields.io/github/license/wangyewei/aquamark">
   </a>
   <a href="https://github.com/wangyewei/aquamark/actions">
-    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wangyewei/aquamark/.github%2Fworkflows%2Fci.yml?label=ci">
+    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wangyewei/aquamark/.github%2Fworkflows%2Fcodecov.yml?label=ci">
   </a>
 </p>
 <p align="center">
