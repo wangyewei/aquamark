@@ -56,23 +56,23 @@ aquamark.init()
 
 ## Configurations
 
-| name    | type              | desc               | required | default       |
-| ------- | ----------------- | ------------------ | -------- | ------------- |
-| content | string            | water mark content | `false`  | 'auqamark.js' |
-| rotate  | number( -180~180) | content rotate     | `false`  | -22           |
-| font    | `AuqamarkFont`    | font-related       | `false`  |               |
-| top     | number            |                    | `false`  | 0             |
-| left    | number            |                    | `false`  | 0             |
-| zIndex  | number            | z-index            | `false`  | 0             |
+| name    | type                | desc               | required | default       |
+| ------- | ------------------- | ------------------ | -------- | ------------- |
+| content | `string`            | water mark content | `false`  | 'auqamark.js' |
+| rotate  | `number`( -180~180) | content rotate     | `false`  | -22           |
+| font    | `AuqamarkFont`      | font-related       | `false`  |               |
+| top     | `number`            |                    | `false`  | 0             |
+| left    | `number`            |                    | `false`  | 0             |
+| zIndex  | `number`            | z-index            | `false`  | 0             |
 
 ### AquamarkFont
 
 | name       | type                                  | desc              | required | default         |
 | ---------- | ------------------------------------- | ----------------- | -------- | --------------- |
-| color      | string                                | font color        | `false`  | rgba(0,0,0,.15) |
-| fontSize   | number                                | text size         | `false`  | 22              |
-| fontWeight | 'normal','light','weight',number      | text weight       | `false`  | 'normal'        |
-| fontFamily | string                                | text font-famlily | `false`  | 'normal'        |
+| color      | `string`                              | font color        | `false`  | rgba(0,0,0,.15) |
+| fontSize   | `number`                              | text size         | `false`  | 22              |
+| fontWeight | 'normal','light','weight',`number`    | text weight       | `false`  | 'normal'        |
+| fontFamily | `string`                              | text font-famlily | `false`  | 'normal'        |
 | textAlign  | 'start','end','left','right','center' | text align        | `false`  | 'center'        |
 
 ## License
