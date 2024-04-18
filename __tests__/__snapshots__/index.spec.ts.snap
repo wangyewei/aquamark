@@ -1,0 +1,5 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Aquamark > Aquamark should be rendered 1`] = `"<div id="aquamark-root" style="pointer-events: none; top: 0px; left: 0px; position: fixed; z-index: 100; width: 0px; height: 0px; background: url(data:image/png;base64,00) repeat top;"></div>"`;
+
+exports[`Aquamark > renders Aquamark component with default options 1`] = `"<div id="aquamark-root" style="pointer-events: none; top: 0px; left: 0px; position: fixed; z-index: 100; width: 0px; height: 0px; background: url(data:image/png;base64,00) repeat top;"></div>"`;

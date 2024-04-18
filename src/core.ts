@@ -1,6 +1,6 @@
 import type { AquamarkProps, AuqamarkFont } from "./props"
 
-const CANVAS_ID = 'aquamark-root'
+export const CANVAS_ID = 'aquamark-root'
 export function render(configs: AquamarkProps) {
   const CANVAS_EL = document.querySelector(`#${CANVAS_ID}`)
   if (CANVAS_EL) {
