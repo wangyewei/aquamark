@@ -7,11 +7,11 @@
 <p>
 
 <p align="center">
-  <a href="https://github.com/wangyewei/utilizen/blob/main/LICENSE">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/wangyewei/aquamark?style=flat&color=%230093E9">
+  <a href="https://github.com/wangyewei/aquamark/blob/main/LICENSE">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/wangyewei/aquamark">
   </a>
-  <a href="https://github.com/wangyewei/utilizen/actions">
-    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wangyewei/aquamark/ci.yml?style=flat&label=CI">
+  <a href="https://github.com/wangyewei/aquamark/actions">
+    <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wangyewei/aquamark/.github%2Fworkflows%2Fci.yml?label=ci">
   </a>
 </p>
 
@@ -27,7 +27,7 @@
 Install using `CDN`
 
 ```html
-<script src="https://unpkg.com/browse/aquamark/dist/index.iife.js"><script>
+<script src="https://unpkg.com/browse/aquamark/dist/index.iife.js"></script>
 ```
 Install using `npm`
 
@@ -37,8 +37,19 @@ $ npm install aquamark
 
 ## Basic Usage
 
+In `Browser`
+```html
+<script src="https://unpkg.com/browse/aquamark/dist/index.iife.js"></script>
+<script>
+  const aquamark = new Aquamark(/** configs */)
+  aquamark.init()
+</script>
+```
+
+In `webpack` or `vite` etc;
 ```typescript
-const aquamark = new Aquamark()
+import Aquamark from 'aquamark'
+const aquamark = new Aquamark(/** configs */)
 aquamark.init()
 ```
 
