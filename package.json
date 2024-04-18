@@ -19,11 +19,15 @@
   "license": "MIT",
   "type": "module",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js",
+      "default": "./dist/index.esm.js"
     }
   },
   "keywords": [
