@@ -13,6 +13,9 @@
   <a href="https://github.com/wangyewei/aquamark/actions">
     <img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/wangyewei/aquamark/.github%2Fworkflows%2Fcodecov.yml?label=ci">
   </a>
+  <a href="https://codecov.io/gh/wangyewei/aquamark" >
+    <img src="https://codecov.io/gh/wangyewei/aquamark/graph/badge.svg?token=81CLERUXZQ"/>
+  </a>
 </p>
 <p align="center">
   <a href="https://www.npmjs.com/package/aquamark">
