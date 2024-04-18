@@ -67,13 +67,21 @@ aquamark.init()
 
 ### AquamarkFont
 
-| name       | type                                  | desc              | required | default         |
-| ---------- | ------------------------------------- | ----------------- | -------- | --------------- |
-| color      | `string`                              | font color        | `false`  | rgba(0,0,0,.15) |
-| fontSize   | `number`                              | text size         | `false`  | 22              |
-| fontWeight | 'normal','light','weight',`number`    | text weight       | `false`  | 'normal'        |
-| fontFamily | `string`                              | text font-famlily | `false`  | 'normal'        |
-| textAlign  | 'start','end','left','right','center' | text align        | `false`  | 'center'        |
+| name       | type                                            | desc              | required | default            |
+| ---------- | ----------------------------------------------- | ----------------- | -------- | ------------------ |
+| color      | `string`                                        | font color        | `false`  | rgba(0, 0, 0, .15) |
+| fontSize   | `number`                                        | text size         | `false`  | 22                 |
+| fontWeight | `'normal'`,`'light'`,`'weight'`,`number`        | text weight       | `false`  | 'normal'           |
+| fontFamily | `string`                                        | text font-famlily | `false`  | 'normal'           |
+| textAlign  | `'start'`,`'end'`,`'left'`,`'right'`,`'center'` | text align        | `false`  | 'center'           |
+
+### Short-term Goal
+
+| desc                         | status |
+| ---------------------------- | ------ |
+| improve test coverage        |        |
+| can not delete the watermark |        |
+| DX imporve                   |        |
 
 ## License
 
