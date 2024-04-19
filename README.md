@@ -3,7 +3,7 @@
   <br />
 
   <h3 align="center">Aquamark.js</h3>
-  <p align="center">watermark for webpage based on canvas & typescript</p>
+  <p align="center">A <b>light-weight</b>, <b>strong</b>, <b>safe</b> and <b>responsive</b> watermark tool for webpage. <br />Based on Canvas & Typescript</p>
 <p>
 
 <p align="center">
@@ -27,6 +27,9 @@
 </p>
 
 <p align="center">
+  <b>Light weight:</b> 1.14kb minified size ;  <b>Safe</b>: Manual removal of watermarks is not allowed; <b>Responsive</b>: Adaptive screen size; <b>Strong</b>: Almost 100% test coverage
+  <br />
+  <br />
   <b>🚧 Work In Progress 🚧</b><br/>
   currently in active development and not usable for production yet.
 </p>
@@ -52,7 +55,7 @@ In `Browser`
 ```html
 <script src="https://unpkg.com/browse/aquamark/dist/index.iife.js"></script>
 <script>
-  const aquamark = new Aquamark(/** configs */)
+  const aquamark = new Aquamark(/** props */)
   aquamark.init()
 </script>
 ```
@@ -61,24 +64,24 @@ In `webpack` or `vite` etc;
 
 ```typescript
 import Aquamark from "aquamark"
-const aquamark = new Aquamark(/** configs */)
+const aquamark = new Aquamark(/** props */)
 aquamark.init()
 ```
 
-## Configurations
+## Props
 
-| name    | type                | desc               | required | default       |
-| ------- | ------------------- | ------------------ | -------- | ------------- |
-| content | `string`            | water mark content | `false`  | 'auqamark.js' |
-| rotate  | `number`( -180~180) | content rotate     | `false`  | -22           |
-| font    | `AuqamarkFont`      | font-related       | `false`  |               |
-| top     | `number`            |                    | `false`  | 0             |
-| left    | `number`            |                    | `false`  | 0             |
-| zIndex  | `number`            | z-index            | `false`  | 0             |
+| name    | type                | description       | required | default       |
+| ------- | ------------------- | ----------------- | -------- | ------------- |
+| content | `string`            | watermark content | `false`  | 'auqamark.js' |
+| rotate  | `number`( -180~180) | content rotate    | `false`  | -22           |
+| font    | `AuqamarkFont`      | font-related      | `false`  |               |
+| top     | `number`            |                   | `false`  | 0             |
+| left    | `number`            |                   | `false`  | 0             |
+| zIndex  | `number`            | z-index           | `false`  | 0             |
 
 ### AquamarkFont
 
-| name       | type                                                | desc              | required | default            |
+| name       | type                                                | description       | required | default            |
 | ---------- | --------------------------------------------------- | ----------------- | -------- | ------------------ |
 | color      | `string`                                            | font color        | `false`  | rgba(0, 0, 0, .15) |
 | fontSize   | `number`                                            | text size         | `false`  | 22                 |
@@ -86,13 +89,11 @@ aquamark.init()
 | fontFamily | `string`                                            | text font-famlily | `false`  | 'normal'           |
 | textAlign  | `'start'`, `'end'`, `'left'`, `'right'`, `'center'` | text align        | `false`  | 'center'           |
 
-### Short-term Goal
+## Methods
 
-| desc                         | status |
-| ---------------------------- | ------ |
-| improve test coverage        |        |
-| can not delete the watermark |        |
-| DX imporve                   |        |
+| name | description       | parameters |
+| ---- | ----------------- | ---------- |
+| init | watermark initial | -          |
 
 ## License
 
