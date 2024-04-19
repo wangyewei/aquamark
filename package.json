@@ -1,7 +1,7 @@
 {
   "packageManager": "pnpm@8.6.1",
   "name": "aquamark",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Aquamark.js is a watermark util based on canvas & typescript",
   "repository": {
     "type": "git",
