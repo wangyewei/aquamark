@@ -1,16 +1,17 @@
 import type { AquamarkProps, AuqamarkFont } from "./props"
 
 export const CANVAS_ID = 'aquamark-root'
-export function render(configs: AquamarkProps) {
+export async function render(configs: AquamarkProps) {
   const CANVAS_EL = document.querySelector(`#${CANVAS_ID}`)
   if (CANVAS_EL) {
     document.body.removeChild(CANVAS_EL)
   }
   const canvas = document.createElement('canvas')
-  draw(canvas, configs)
+  const drawResults = await draw(canvas, configs)
+  return drawResults
 }
 
-function draw(
+async function draw(
   canvas: HTMLCanvasElement,
   props: AquamarkProps
 ) {
@@ -21,7 +22,7 @@ function draw(
   const { left, top, zIndex } = props
   const [rotate, font] = normalizedAttts(props, height)
   const { fontColor, fontStr, textAlign, fontSize } = font
-  // TODO: all of the follwing attributes should be configurable
+
   ctx.rotate(rotate)
   ctx.font = fontStr
   ctx.fillStyle = fontColor
@@ -43,7 +44,8 @@ function draw(
   dom.style.height = document.documentElement.clientHeight + 'px'
   dom.style.background = 'url(' + canvas.toDataURL('image/png') + ') left top repeat'
   document.body.appendChild(dom)
-  return CANVAS_ID
+
+  return dom
 }
 
 function normalizedAttts(
