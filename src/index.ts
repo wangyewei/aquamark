@@ -22,7 +22,10 @@ export default class Aquamark {
 
     const ob = new MutationObserver(target => {
       const l = normalizedMutationRecord(target)
-      if (l.length) this.init()
+      if (l.length) {
+        ob.disconnect()
+        this.init()
+      }
     })
 
     ob.observe(target, {

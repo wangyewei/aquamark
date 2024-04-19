@@ -8,3 +8,5 @@ exports[`Aquamark Basic Usage > Aquamark cannot be changed 1`] = `
 `;
 
 exports[`Aquamark Basic Usage > Aquamark should be rendered 1`] = `"<div id="aquamark-root" style="pointer-events: none; top: 0px; left: 0px; position: fixed; z-index: 100; width: 0px; height: 0px; background: url(data:image/png;base64,00) repeat top;"></div>"`;
+
+exports[`Aquamark Basic Usage > Auamark cannot be removed 1`] = `"<div id="aquamark-root" style="pointer-events: none; top: 0px; left: 0px; position: fixed; z-index: 100; width: 0px; height: 0px; background: url(data:image/png;base64,00) repeat top;"></div>"`;
