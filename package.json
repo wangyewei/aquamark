@@ -1,7 +1,7 @@
 {
   "packageManager": "pnpm@8.6.1",
   "name": "aquamark",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Aquamark.js is a watermark util based on canvas & typescript",
   "repository": {
     "type": "git",
@@ -45,7 +45,8 @@
     "build:index": "tsc -p . --noEmit && rollup --config rollup.config.ts --configPlugin esbuild",
     "build:dts": "tsc -p tsconfig.build.json --noEmit && rollup -c rollup.dts.config.js",
     "build:playgrounds": "node ./scripts/build-playgrounds.js",
-    "build:all": "run-s build build:playgrounds"
+    "build:all": "run-s build build:playgrounds",
+    "release": "bumpp package.json --commit --push --tag"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^5.1.0",
@@ -56,6 +57,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "@types/node": "^20.11.30",
     "@vitest/coverage-istanbul": "^1.4.0",
+    "bumpp": "^9.4.0",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
     "jest-canvas-mock": "^2.5.2",
