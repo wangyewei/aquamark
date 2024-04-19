@@ -28,10 +28,6 @@
 
 <p align="center">
   <b>Light weight:</b> 1.14kb minified size ;  <b>Safe</b>: Manual removal of watermarks is not allowed; <b>Responsive</b>: Adaptive screen size; <b>Strong</b>: Almost 100% test coverage
-  <br />
-  <br />
-  <b>🚧 Work In Progress 🚧</b><br/>
-  currently in active development and not usable for production yet.
 </p>
 
 ## Installation
